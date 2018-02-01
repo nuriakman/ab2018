@@ -1,0 +1,6 @@
+ab2018.sql dosyasını yüklemek için:
+
+- ADMINER'e giriş yapın
+- "İçeri Aktar" linkine basın
+- Gözat diyerek ab2018.sql dosyasını seçin seçin.
+- "Çalıştır" dğmesine basın

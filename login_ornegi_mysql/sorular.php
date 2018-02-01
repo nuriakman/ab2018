@@ -1,9 +1,10 @@
 <?php
+
   session_start();
   if( $_SESSION["giris_yapti"] <> "EVET") {
     header("location: yetkili.degilsiniz.php");
     //echo "<h1>Bu sayfaya giriş yetkiniz yok !!!</h1>";
-    die(); // Yönlendirme sonrasında die() komutunu unutmayalım !!!
+    die();
   }
 
 ?>
@@ -14,7 +15,8 @@
   <title>Sorular</title>
 </head>
 <body>
-<h1>Sorubankasında Bulunan Sorular</h1>
+<h1>Merhaba <?php echo $_SESSION["AKTIF_KULLANICI"]; ?></h1>
+<h3>Sorubankasında Bulunan Sorular</h3>
 
 <p><a href="sorular1.php">1.Vize Soruları</a></p>
 <p><a href="sorular2.php">1.Vize Soruları</a></p>

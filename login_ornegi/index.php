@@ -9,7 +9,7 @@ $HATAMESAJI = "";
             session_start();
             $_SESSION["giris_yapti"] = "EVET";
             header("Location: sorular.php");
-            die();
+            die(); // Yönlendirme sonrasında die() komutunu unutmayalım !!!
       } else {
          // Giriş hatalı !!!
          $HATAMESAJI = "Hatalı giriş";

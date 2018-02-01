@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>So</title>
+  <title>Sorular</title>
 </head>
 <body>
 <h1>1.Vizede Sorulacak Sorular</h1>
