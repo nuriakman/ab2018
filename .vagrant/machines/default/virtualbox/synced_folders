@@ -1,1 +1,0 @@
-{"virtualbox":{"/var/www/public":{"mount_options":["dmode=777","fmode=666"],"guestpath":"/var/www/public","hostpath":"/Users/nuriakman/Desktop/htdocs","disabled":false,"__vagrantfile":true}}}
