@@ -33,7 +33,8 @@ $val1 = "AAA";
 $val2 = "BBB";
 $val3 = 45000;
 
-// SQL içine konulacak değişkenlere MUTLAKA bu işlem uygulanmalıdır. Bunun sebebi GÜVENLİK'tir.
+// SQL içine konulacak değişkenlere MUTLAKA bu işlem uygulanmalıdır.
+// Bunun sebebi GÜVENLİK'tir.
 $val1 = mysqli_real_escape_string($cnnMySQL, $val1);
 $val2 = mysqli_real_escape_string($cnnMySQL, $val2);
 $val3 = mysqli_real_escape_string($cnnMySQL, $val3);
@@ -50,12 +51,17 @@ $val1 = "AaAaAa";
 $val2 = "BbBbBb";
 $val3 = 75000;
 
-// SQL içine konulacak değişkenlere MUTLAKA bu işlem uygulanmalıdır. Bunun sebebi GÜVENLİK'tir.
+// SQL içine konulacak değişkenlere MUTLAKA bu işlem uygulanmalıdır.
+// Bunun sebebi GÜVENLİK'tir.
 $val1 = mysqli_real_escape_string($cnnMySQL, $val1);
 $val2 = mysqli_real_escape_string($cnnMySQL, $val2);
 $val3 = mysqli_real_escape_string($cnnMySQL, $val3);
 
-$SQL = "UPDATE araclar SET marka = '$val1', model = '$val2', fiyat = '$val3' WHERE id=1678";
+$SQL = "UPDATE araclar SET
+          marka = '$val1',
+          model = '$val2',
+          fiyat = '$val3'
+        WHERE id=1678";
 $rows = mysqli_query($cnnMySQL, $SQL);
 
 
