@@ -38,7 +38,8 @@ $val1 = mysqli_real_escape_string($cnnMySQL, $val1);
 $val2 = mysqli_real_escape_string($cnnMySQL, $val2);
 $val3 = mysqli_real_escape_string($cnnMySQL, $val3);
 
-$SQL = "INSERT INTO araclar (marka, model, fiyat) VALUES ( '$val1', '$val2', '$val3' )";
+$SQL = "INSERT INTO araclar (marka, model, fiyat)
+        VALUES ( '$val1', '$val2', '$val3' )";
 $rows = mysqli_query($cnnMySQL, $SQL);
 
 
