@@ -1,6 +1,13 @@
 <?php
 $HATAMESAJI = "";
 
+  session_start();
+  if( $_SESSION["giris_yapti"] == "EVET") {
+    //Kullanıcı zaten giriş yapmış...
+    header("location: sorular.php"); // Giriş yapmışsa bu sayfaya yönlendirelim
+    die(); // Yönlendirme sonrasında die() komutunu unutmayalım !!!
+  }
+
   if(isset($_POST["parola"])) {
 
       if( $_POST["parola"] == "123" and
