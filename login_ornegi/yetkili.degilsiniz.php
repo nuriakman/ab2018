@@ -10,7 +10,7 @@
 
     <h1>Bu sayfaya giriş yetkiniz yok !!!</h1>
 
-    <p>Yetki taplerinizi 4455 nolu telefona iletebilrisiniz.</p>
+    <p>Yetki taplerinizi 4455 nolu telefona iletebilirsiniz.</p>
 
     <a href="index.php">Giriş Sayfasına Git</a>
 
