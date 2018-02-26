@@ -31,11 +31,20 @@
           extract($row); // "Key" adında değişkenler oluştur :)
           $c++;
           // Tablo verilerini yazdıralım
+          $RolAdi = ($rol == 1) ? "Yönetici" : "Kullanıcı";
+          /*
+          Yukarıdaki kod aşağıdaki işi yapar:
+            if($rol == 1) {
+              $RolAdi = "Yönetici";
+            } else {
+              $RolAdi = "Kullanıcı";
+            }
+          */
           echo "<tr>
                     <td>$c</td>
                     <td>$adi_soyadi</td>
                     <td>$kullanici_adi</td>
-                    <td>$rol</td>
+                    <td>$RolAdi</td>
                     <td><a href='#'>Düzenle</a></td>
                     <td><a href='#'>Sil</a></td>
                 </tr>";
@@ -48,7 +57,7 @@
 
 
   </table>
-<p><a href="#">Yeni Kayıt Ekle...</a></p>
+<p><a href="kullanici.ekle.php">Yeni Kullanıcı Ekle...</a></p>
 
 <p>&nbsp;</p>
 <p><a href="sorular.php">Geri Dön...</a></p>
