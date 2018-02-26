@@ -5,9 +5,7 @@ SET time_zone = '+00:00';
 SET foreign_key_checks = 0;
 SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
 
-DROP DATABASE IF EXISTS `AB_2018`;
-CREATE DATABASE `AB_2018` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_turkish_ci */;
-USE `AB_2018`;
+USE `ab2018`;
 
 DROP TABLE IF EXISTS `okullar`;
 CREATE TABLE `okullar` (
