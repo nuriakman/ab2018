@@ -26,9 +26,8 @@
 <p>&nbsp;</p>
 <?php
   if( $_SESSION["AKTIF_ROL"] == 1) {
-    echo "Siz yöneticisiniz...";
-  } else {
-    echo "Siz kullanıcısınız...";
+    echo "<h2>Yönetim Menüsü</h2>";
+    echo "<a href='kullanici.yonetimi.php'>Kullanıcı Yönetimi</a>";
   }
 ?>
 

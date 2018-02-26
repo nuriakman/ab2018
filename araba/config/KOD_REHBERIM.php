@@ -45,7 +45,7 @@ $rows = mysqli_query($cnnMySQL, $SQL);
 
 
 ## Veritabanına kayıt güncelleme
-## Veritabanına kayıt ekleme
+## Veritabanına kayıt güncelleme
 
 $val1 = "AaAaAa";
 $val2 = "BbBbBb";
